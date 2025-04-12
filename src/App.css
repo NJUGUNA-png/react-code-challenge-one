@@ -93,3 +93,15 @@ button:hover {
   border-color: #646cff;
   background-color: #535bf2;
 }
+
+.delete-btn {
+  background-color: #ff5252;
+  margin-top: 0;
+  padding: 0.5em 1em;
+  font-size: 0.9em;
+}
+
+.delete-btn:hover {
+  background-color: #ff6b6b;
+  border-color:#ff6b6b;
+}
