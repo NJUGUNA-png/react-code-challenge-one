@@ -26,5 +26,11 @@ function App(){
       date: "2025-04-15",
       category: "Utilities"
     }
-  ])
+  ]);
+
+  function handleAddExpense(newExpense){
+    setExpenses([...expenses,newExpense]);
+
+    alert(`Expense "${newExpense.description}" added successfully!`);
+  }
 }
