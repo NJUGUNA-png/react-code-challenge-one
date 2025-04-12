@@ -13,5 +13,10 @@ function ExpenseList({expenses, onDeleteExpense}){
         setSearchTerm(event.target.value);
     }
 
-    
+    const filteredExpenses = expenses.filter(expense =>{
+        const descriptionMatch = expense.description.toLowerCase().includes(searchTerm.toLowerCase());
+        const categoryMatch = expense.category.toLowerCase().includes(searchTerm.toLowerCase());
+
+        return descriptionMatch || categoryMatch;
+    })
 }
