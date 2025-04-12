@@ -7,4 +7,5 @@ function ExpenseForm({onAddExpense}){
         date: '',
         category: ''
     });
+    const [errors,setErrors] = useState({});
 }
