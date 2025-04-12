@@ -105,3 +105,57 @@ button:hover {
   background-color: #ff6b6b;
   border-color:#ff6b6b;
 }
+
+.expense-list-container {
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar {
+  margin-bottom: 1.5rem;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 0.6em 1.2em;
+  border-radius: 8px;
+  border: 1px solid #3a3a3a;
+  background-color: #242424;
+  color: white;
+  font-family: inherit;
+  font-size: 1em;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #3a3a3a;
+}
+
+th {
+  background-color: #242424;
+  cursor: pointer;
+  user-select: none;
+}
+
+th:hover {
+  background-color: #2a2a2a;
+}
+
+tr:hover {
+  background-color: #2a2a2a;
+}
+
+.no-expenses-message {
+  color: #888;
+  font-style: italic;
+  margin-top: 2rem;
+}
