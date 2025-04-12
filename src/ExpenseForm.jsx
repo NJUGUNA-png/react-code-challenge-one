@@ -48,4 +48,27 @@ function ExpenseForm({onAddExpense}){
 
         return Object.keys(newErrors).length === 0;
     }
+
+    function handleSubmit(event){
+        event.preventDefault();
+
+        const isValid = validateForm();
+
+        if (isValid){
+            const newExpense = {
+                ...formData,
+                amount: parseFloat(formData.amount),
+                id: Date.now()
+            };
+
+            onAddExpense(newExpense);
+
+            setFormData({
+                decription: '',
+                amount: '',
+                date:'',
+                category:''
+            });
+        }
+    }
 }
