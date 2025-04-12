@@ -4,3 +4,14 @@
   padding: 2rem;
   text-align: center;
 }
+
+.expense-tracker-container{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1{
+  color: #646cff;
+  margin-bottom: 1rem;
+}
