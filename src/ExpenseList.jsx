@@ -50,5 +50,10 @@ function ExpenseList({expenses, onDeleteExpense}){
         }
 
         return 0;
-    })
+    });
+
+    function formatDate (dateString){
+        const options = { year: 'numeric', month: 'short', day: 'numeric'};
+        return new Date(dateString).toLocaleDateString(undefined, options);
+    }
 }
