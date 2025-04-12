@@ -56,4 +56,10 @@ function ExpenseList({expenses, onDeleteExpense}){
         const options = { year: 'numeric', month: 'short', day: 'numeric'};
         return new Date(dateString).toLocaleDateString(undefined, options);
     }
+
+    function handleDelete(id){
+        if (window.confirm('Are you sure you want to delete this expense?')){
+            onDeleteExpense(id);
+        }
+    }
 }
