@@ -8,4 +8,10 @@ function ExpenseList({expenses, onDeleteExpense}){
         key: null,
         direction: 'ascending'
     });
+
+    function handleSearchChange(event){
+        setSearchTerm(event.target.value);
+    }
+
+    
 }
