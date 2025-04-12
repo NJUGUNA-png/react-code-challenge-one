@@ -23,4 +23,29 @@ function ExpenseForm({onAddExpense}){
             });
         }
     }
+
+    function validateForm(){
+        const newErrors = {};
+
+        if(!formData.description.trim()){
+            newErrors.description = 'Description is required';
+        }
+        if(!formData.amount){
+            newErrors.amount = 'Amount is required';
+        }else if (isNaN(formData.amount) || parseFloat(formData.amount) <= 0){
+            newErrors.amount = 'Amount must be a positive number';
+        }
+
+        if (!formData.date){
+            newErrors.date = 'Date is required';
+        }
+
+        if (!formData.category){
+            newErrors.category = 'Category is required';
+        }
+
+        setErrors(newErrors);
+
+        return Object.keys(newErrors).length === 0;
+    }
 }
