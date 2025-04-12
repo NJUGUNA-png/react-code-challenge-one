@@ -19,4 +19,20 @@ function ExpenseList({expenses, onDeleteExpense}){
 
         return descriptionMatch || categoryMatch;
     })
+
+    function handleSort(key){
+
+        if (sortConfig.key === key){
+            setSortConfig({
+                key:key,
+                direction: sortConfig.direction === 'ascending'? 'descending' : 'ascending'
+            });
+        }else{
+            setSortConfig({
+                key: key,
+                direction: 'ascending'
+            });
+        }
+    }
+    
 }
