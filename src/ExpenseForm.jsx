@@ -8,4 +8,19 @@ function ExpenseForm({onAddExpense}){
         category: ''
     });
     const [errors,setErrors] = useState({});
+    
+    function handleChange(event){
+        const fieldName = event.target.name;
+        const fieldValue = event.target.value;
+        setFormData({
+            ...formData,
+            [fieldName]: fieldValue
+        });
+        if (errors[fieldName]){
+            setErrors({
+                ...errors,
+                [fieldName]: ''
+            });
+        }
+    }
 }
