@@ -39,3 +39,32 @@ h1{
   flex-direction: column;
   gap: 2rem;
 }
+
+expense-form-container{
+  background-color: #1a1a1a;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+label{
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+input, select{
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #3a3a3a;
+  background-color: #242424;
+  color: white;
+  font-family: inherit;
+  font-size: 1em;
+}
