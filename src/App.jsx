@@ -33,4 +33,15 @@ function App(){
 
     alert(`Expense "${newExpense.description}" added successfully!`);
   }
+
+  function handleDeleteExpense(expenseId){
+
+    const expenseToDelete = expenses.find(expense => expense.id === expenseId);
+
+    const updatedExpenses = expenses.filter(expense => expense.id !== expenseId);
+
+    setExpenses(updatedExpenses);
+
+    alert(`Expense "${expenseToDelete.description}" deleted successfully!`);
+  }
 }
