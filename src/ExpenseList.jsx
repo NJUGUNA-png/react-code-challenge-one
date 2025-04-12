@@ -34,5 +34,21 @@ function ExpenseList({expenses, onDeleteExpense}){
             });
         }
     }
-    
+
+    const sortedExpenses = [...filteredExpenses].sort((a,b) => {
+        if (!sortConfig.key){
+            return 0;
+        }
+        const valueA = a[sortConfig.key];
+        const valueB = b[sortConfig.key];
+
+        if (valueA < valueB){
+            return sortConfig.direction === 'ascending' ? -1 : 1;
+        }
+        if (valueA > valueB){
+            return sortConfig.direction === 'ascending' ? 1 : -1
+        }
+
+        return 0;
+    })
 }
