@@ -44,4 +44,36 @@ function App(){
 
     alert(`Expense "${expenseToDelete.description}" deleted successfully!`);
   }
+
+  const totalAmount = expenses.reduce((sum, expense)=> sum + expense.amount, 0);
+  const expenseCount = expenses.length;
+
+  return (
+    <div className="expense-tracker-container">
+      
+      <h1>Your Expense Tracker</h1>
+      
+    
+      <div className="expense-summary">
+        <p>
+          You have <strong>{expenseCount}</strong> expenses totaling{" "}
+          <strong>${totalAmount.toFixed(2)}</strong>
+        </p>
+      </div>
+      
+      
+      <div className="expense-tracker-content">
+        
+        <ExpenseForm onAddExpense={handleAddExpense} />
+        
+      
+        <ExpenseList 
+          expenses={expenses} 
+          onDeleteExpense={handleDeleteExpense} 
+        />
+      </div>
+    </div>
+  )
 }
+
+export default App
