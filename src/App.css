@@ -68,3 +68,10 @@ input, select{
   font-family: inherit;
   font-size: 1em;
 }
+
+.error-text{
+  color: #ff6b6b;
+  font-size: 0.9em;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
+}
