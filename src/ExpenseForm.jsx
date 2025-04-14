@@ -131,9 +131,9 @@ function ExpenseForm({onAddExpense}){
               >
                 <option value="">-- Select a category --</option>
                 <option value="Food">Food</option>
-                <option value="Transportation">Transportation</option>
+                <option value="Insurance">Transportation</option>
                 <option value="Housing">Housing</option>
-                <option value="Utilities">Utilities</option>
+                <option value="Savings">Utilities</option>
                 <option value="Entertainment">Entertainment</option>
                 <option value="Healthcare">Healthcare</option>
                 <option value="Other">Other</option>
