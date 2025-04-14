@@ -65,7 +65,7 @@ function ExpenseList({expenses, onDeleteExpense}){
 
     function getSortIndicator(key){
         if (sortConfig.key === key){
-            return sortConfig.direction === 'ascending' ? '↑' : '↓'; 
+            return sortConfig.direction === 'ascending' ? 'asc' : 'desc'; 
         }
         return '';
     }
@@ -138,3 +138,4 @@ function ExpenseList({expenses, onDeleteExpense}){
     }
     
     export default ExpenseList;
+

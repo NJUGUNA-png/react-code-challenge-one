@@ -10,7 +10,7 @@ function App(){
       description:"Gym Membership",
       amount: 100,
       date: "2025-04-12",
-      category: "Health"
+      category: "Healthcare"
     },
     {
       id: 2,
@@ -21,10 +21,17 @@ function App(){
     },
     {
       id:3,
-      description:"Gas Bill",
-      amount: 60,
+      description:"SHA Certificate",
+      amount: 460,
       date: "2025-04-15",
-      category: "Utilities"
+      category: "Insurance"
+    },
+    {
+      id:4,
+      description:"CIC Deposit",
+      amount: 2000,
+      date: "2025-04-20",
+      category: "Savings"
     }
   ]);
 
